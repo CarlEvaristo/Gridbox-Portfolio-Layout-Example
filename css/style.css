@@ -1,0 +1,42 @@
+body {
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    color: #555;
+    background: #333;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio {
+    padding: 1em;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "title title title";
+    grid-gap: 1em
+}
+
+.portfolio-title {
+    text-align: center;
+    color: #00C896;
+    grid-area: title;
+}
+
+img {
+    max-width: 100%;
+}
+
+.portfolio-card {
+    box-shadow: 0 0 1em rgba(0,0,0,.25);
+    padding: 1em;
+    background: white;
+}
+
+.portfolio-card-title {
+    font-size: 1.5rem;
+    color: #000;
+}
